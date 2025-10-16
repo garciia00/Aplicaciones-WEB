@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><strong>Información sobre el productor</strong></h3>
+    <form> 
+        <fieldset style=" width: 420px;">
+            <legend>Datos básicos</legend>
+            <label for="nombre" >Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" size=45px required><br><br>
+            
+            <label for="descripcion">Descripción</label><br>
+            <textarea  rows="4" cols="50"></textarea> <br><br>
+
+            <label for="foto">Foto </label>
+            <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+            
+                <input type="checkbox" id="contador" name="contador" value="contador" checked>Añadir contador de visitas. <br>
+        </fieldset>
+        <fieldset style=" width: 420px;">
+            <legend>Datos economicos</legend>
+            <label for="precio">Precio </label>
+            <input type="text" id="precio" name="precio" size=5px required> € &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <label for="programa">Impuestos</label>
+            <select name="programa"> 
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+                </optgroup>
+            </select> <br><br>
+
+            <label>Promoción</label> <br>
+                <input type="radio" id="Ninguno" name="Promoción" value="Ninguno" checked>
+                <label for="Ninguno">Ninguno</label> <br>
+                <input type="radio" id="transp_gratis" name="Promoción" value="transp_gratis">
+                <label for="transp_gratis">Transporte gratuito </label> <br>
+                <input type="radio" id="desc" name="Promoción" value="desc">
+                <label for="desc">Descuento 5%</label> <br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
