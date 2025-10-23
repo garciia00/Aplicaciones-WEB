@@ -8,87 +8,88 @@
 </head>
 
 <body>
-        <header>
+    <header>
         <nav>
-        <a href="#inicio">Inicio</a> |
-        <a href="#formulario">Formulario</a> |
-        <a href="#ubicacion">Ubicación</a> |
-        <a href="#videos">Videos</a> |
-        <a href="#tareas">Tareas</a>
-         </nav>
-        </header>
+            <a href="#inicio">Inicio</a> |
+            <a href="#formulario">Formulario</a> |
+            <a href="#ubicacion">Ubicación</a> |
+            <a href="#videos">Videos</a> |
+            <a href="#tareas">Tareas</a>
+        </nav>
+    </header>
 
-        <aside>
-            <h2>Foto mia del futuro</h2>
-            <img src="archivo.jpg" alt="Diario" width="500" height="500">
-        </aside>
+    <aside>
+        <h2>Foto mia del futuro</h2>
+        <img src="archivo.jpg" alt="Diario" width="500" height="500">
+    </aside>
+
     <h1 id="inicio">Mi Diario Personal</h1>
-        <main>
-    <form id="formulario" action="#" method="post">
-        <label for="date">Fecha:</label>
-        <input type="date" id="date" name="date" required>
-        <br><br>
 
-        <label><strong>¿Que tiempo hace?:</strong></label><br>
-        <input type="radio" id="despejado" name="tiempo" value="despejado" checked>
-        <label for="despejado">Despejado</label><br>
-        <input type="radio" id="nublado" name="tiempo" value="nublado">
-        <label for="nublado">Nublado</label><br>
-        <input type="radio" id="lluvioso" name="tiempo" value="lluvioso">
-        <label for="lluvioso">Lluvioso</label><br><br>
+    <main>
+        <form id="formulario" action="#" method="post">
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
 
-        <label for="entry"><i>Hoobys de hoy:</i></label><br>
-        <input type="checkbox" id="baloncesto" name="hooby" value="baloncesto">
-        <label for="baloncesto">Baloncesto</label><br>
-        <input type="checkbox" id="gym" name="hooby" value="gym">
-        <label for="gym">Gym</label><br>
-        <input type="checkbox" id="videojuegos" name="hooby" value="videojuegos">
-        <label for="videojuegos">Videojuegos</label><br><br>
+            <label><strong>¿Qué tiempo hace?:</strong></label><br>
+            <input type="radio" id="despejado" name="tiempo" value="despejado" checked>
+            <label for="despejado">Despejado</label><br>
+            <input type="radio" id="nublado" name="tiempo" value="nublado">
+            <label for="nublado">Nublado</label><br>
+            <input type="radio" id="lluvioso" name="tiempo" value="lluvioso">
+            <label for="lluvioso">Lluvioso</label><br><br>
 
-        <label for="texto">Breve descripcion del día</label><br>
-        <textarea id="texto" name="texto" rows="4" cols="50" placeholder="Escribeme.."></textarea><br><br>
+            <label><i>Hobbies de hoy:</i></label><br>
+            <input type="checkbox" id="baloncesto" name="hooby" value="baloncesto">
+            <label for="baloncesto">Baloncesto</label><br>
+            <input type="checkbox" id="gym" name="hooby" value="gym">
+            <label for="gym">Gym</label><br>
+            <input type="checkbox" id="videojuegos" name="hooby" value="videojuegos">
+            <label for="videojuegos">Videojuegos</label><br><br>
 
-        <label for="foto">Subir una foto del día:</label>
-        <input type="file" id="foto" name="foto"><br><br>
+            <label for="texto">Breve descripción del día</label><br>
+            <textarea id="texto" name="texto" rows="4" cols="50" placeholder="Escribeme.."></textarea><br><br>
 
-        <label for="valoracion">Valora el dia de hoy: </label>
-        <select name="valoracion">
-            <option value="1">1-2</option>
-            <option value="2">3-4</option>
-            <option value="3">5-6</option>
-            <option value="4">7-8</option>
-            <option value="5">9-10</option>
-        </select><br><br>
+            <label for="foto">Subir una foto del día:</label>
+            <input type="file" id="foto" name="foto"><br><br>
 
-        <table border="1" width="50%">
-            <tr>
-                <td>
-                    <label for="baloncesto">¿Has visto el partido semanal de la FBCV del Valencia?</label>
-                </td>
-            </tr>
-            <tr>
-                <td>Sí</td>
-            </tr>
-            <tr>
-                <td>No, mira el canal de <a href="https://www.youtube.com/@ValenciaBasketClub" target="_blank">Valencia
-                        Basket</a></td>
-            </tr>
-        </table><br><br>
+            <label for="valoracion">Valora el día de hoy: </label>
+            <select id="valoracion" name="valoracion">
+                <option value="1">1-2</option>
+                <option value="2">3-4</option>
+                <option value="3">5-6</option>
+                <option value="4">7-8</option>
+                <option value="5">9-10</option>
+            </select><br><br>
 
-        <input type="submit" value="Guardar archivo">
-        <input type="reset" value="Borrar">
-    </form>
+            <table>
+                <tr>
+                    <td>
+                        <label>¿Has visto el partido semanal de la FBCV del Valencia?</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>No, mira el canal de <a href="https://www.youtube.com/@ValenciaBasketClub" target="_blank">Valencia Basket</a></td>
+                </tr>
+            </table><br><br>
+
+            <input type="submit" value="Guardar archivo">
+            <input type="reset" value="Borrar">
+        </form>
     </main>
 
-    <h2 id="ubicacion">Ubicación de Skibidicasa donde refujiarme mentalmente</h2>
+    <h2 id="ubicacion">Ubicación de Skibidicasa donde refugiarme mentalmente</h2>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.916357632034!2d-70.6555320847952!3d-33.18266848080114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662bb41906b54db%3A0xd007354a558af181!2sSkibidicasa!5e0!3m2!1ses!2scl!4v1708572345678!5m2!1ses!2scl"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
     </iframe><br><br>
 
-    <h2 id="videos">Videos que no deberia ver.</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SJxkCw5COYc" title="video" frameborder="0"
+    <h2 id="videos">Videos que no debería ver.</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SJxkCw5COYc" title="video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
     </iframe>
@@ -101,7 +102,7 @@
         <li>Llamar a los abuelicos</li>
     </ul>
 
-    <hr border="1" width="90%">
+    <hr>
     <footer>
         <p>Mi Diario Personal © 2025/2026</p>
         <p>Todo mal....</p>
