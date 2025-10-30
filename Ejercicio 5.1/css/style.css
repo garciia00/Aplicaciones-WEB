@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+h1 {
+    color: red;
+    font-family: 'Kenia', sans-serif;
+    font-size: 28pt;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+    font-family: 'Kenia', sans-serif;
+    font-size: 22pt;
+    font-weight: 400pt;
+    text-decoration: underline;
+    text-shadow: 1px 4px 7px rgb(110, 110, 255);
+}
+
+p {
+    color: gray;
+    font-family: 'Times New Roman';
+    font-size: 12pt;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+p section {
+    color: black;
+}
+
+strong {
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+}
+
+.impar {
+    background-color: rgb(0, 201, 0);}
+
+.par {
+    background-color: lightgreen;
+}
+
+#diferente {
+    background-color: rgb(255, 255, 0);
+    color: red;
+}

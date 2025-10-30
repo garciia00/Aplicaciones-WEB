@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario personal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a> |
+            <a href="#formulario">Formulario</a> |
+            <a href="#ubicacion">Ubicación</a> |
+            <a href="#videos">Videos</a> |
+            <a href="#tareas">Tareas</a>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Foto mia del futuro</h2>
+        <img src="archivo.jpg" alt="Diario" width="500" height="500">
+    </aside>
+
+    <h1 id="inicio">Mi Diario Personal</h1>
+
+    <p id="int">
+        Hoy fue un día tranquilo, pero lleno de pequeñas reflexiones. Por la mañana, mientras caminaba hacia la escuela, sentí cómo el aire fresco me despejaba la mente. Observé a las personas apresuradas, cada una con su propia historia, y me pregunté qué les motivaba. En clase, aprendí cosas nuevas que despertaron mi curiosidad y me hicieron sentir que cada día es una oportunidad para crecer. Al volver a casa, me senté a escribir, tratando de capturar estos momentos simples pero significativos. A veces, son las pequeñas cosas las que llenan de sentido la vida.
+    </p>
+
+    <main>
+        <form id="formulario" action="#" method="post">
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label><strong>¿Qué tiempo hace?:</strong></label><br>
+            <input type="radio" id="despejado" name="tiempo" value="despejado" checked>
+            <label for="despejado">Despejado</label><br>
+            <input type="radio" id="nublado" name="tiempo" value="nublado">
+            <label for="nublado">Nublado</label><br>
+            <input type="radio" id="lluvioso" name="tiempo" value="lluvioso">
+            <label for="lluvioso">Lluvioso</label><br><br>
+
+            <label><i>Hobbies de hoy:</i></label><br>
+            <input type="checkbox" id="baloncesto" name="hooby" value="baloncesto">
+            <label for="baloncesto">Baloncesto</label><br>
+            <input type="checkbox" id="gym" name="hooby" value="gym">
+            <label for="gym">Gym</label><br>
+            <input type="checkbox" id="videojuegos" name="hooby" value="videojuegos">
+            <label for="videojuegos">Videojuegos</label><br><br>
+
+            <label for="texto">Breve descripción del día</label><br>
+            <textarea id="texto" name="texto" rows="4" cols="50" placeholder="Escribeme.."></textarea><br><br>
+
+            <label for="foto">Subir una foto del día:</label>
+            <input type="file" id="foto" name="foto"><br><br>
+
+            <label for="valoracion">Valora el día de hoy: </label>
+            <select id="valoracion" name="valoracion">
+                <option value="1">1-2</option>
+                <option value="2">3-4</option>
+                <option value="3">5-6</option>
+                <option value="4">7-8</option>
+                <option value="5">9-10</option>
+            </select><br><br>
+
+            <table id="diferente">
+                <tr>
+                    <td>
+                        <label>¿Has visto el pedazo semanal de la FBCV del Valencia?</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>No, mira el canal de <a href="https://www.youtube.com/@ValenciaBasketClub" target="_blank">Valencia Basket</a></td>
+                </tr>
+            </table><br><br>
+
+            <input type="submit" value="Guardar archivo">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+
+    <h2 id="ubicacion">Ubicación de Skibidicasa donde refugiarme mentalmente</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.916357632034!2d-70.6555320847952!3d-33.18266848080114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662bb41906b54db%3A0xd007354a558af181!2sSkibidicasa!5e0!3m2!1ses!2scl!4v1708572345678!5m2!1ses!2scl"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe><br><br>
+
+    <h2 id="videos">Videos que no debería ver.</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SJxkCw5COYc" title="video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <h3 id="diferente" >Lista de cosas que hacer</h3>
+    <ul>
+        <li>Estudiar (No me lo creo ni yo)</li>
+        <li>Repasar jugadas de baloncesto</li>
+        <li>Ir al gimnasio</li>
+        <li>Llamar a los abuelicos</li>
+    </ul>
+
+    <section id="articulos">
+    <h2>Artículos Recientes</h2>
+
+    <article class="impar">
+        <h3>Reflexión sobre la mañana</h3>
+        <p>Hoy me di cuenta de lo importante que es disfrutar de los pequeños momentos, como el sol entrando por la ventana y la tranquilidad del desayuno.</p>
+    </article>
+
+    <article class="par">
+        <h3>Mi nueva rutina de ejercicios</h3>
+        <p>He decidido incorporar 30 minutos de ejercicio todos los días. Esto me ayuda a despejar la mente y a mantenerme activo y saludable.</p>
+    </article>
+
+    <article class="impar">
+        <h3>Libro que estoy leyendo</h3>
+        <p>Estoy leyendo un libro que me está enseñando a valorar la perseverancia y la paciencia. Cada capítulo me deja una enseñanza importante.</p>
+    </article>
+
+    <article class="par">
+        <h3>Pequeños logros diarios</h3>
+        <p>Hoy logré organizar mi espacio de estudio y terminar mis tareas a tiempo. Estos pequeños logros me motivan a seguir mejorando cada día.</p>
+    </article>
+</section>
+
+    <hr>
+    <footer id="diferente">
+        <p>Mi Diario Personal © 2025/2026</p>
+        <p>Todo mal....</p>
+    </footer>
+</body>
+
+</html>
