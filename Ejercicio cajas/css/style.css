@@ -1,0 +1,103 @@
+.contenedor{
+    border: 1px solid black;
+    height: 450px;
+    width:100%;
+    position: relative; 
+}
+
+.caja1{
+    width: 50%;
+    height: 200px;
+    background-color: rgb(106, 76, 255);
+    border: 2px solid gray;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.caja2{
+    background-color: rgb(255, 188, 107);
+    width: 20%;
+    height: 100px;
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+.caja3{
+    background-color: rgb(223, 51, 51);
+    border: 1px double black;
+    width: 20%;
+    height: 100px;
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#cajita3{
+    clear: left;
+}
+
+.contenedor-hijo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ej3{
+    direction: rtl;
+}
+#cajita7{
+    float: right;
+    margin-left: 10px;
+}
+
+#cajita10{
+    float: right;
+    margin-left: 10px;
+}
+
+#cajita11{
+    clear: right;
+    margin-bottom: 10px;
+}
+
+#cajita12{
+    clear: left;
+    float: right;
+    direction: ltr;
+}
+
+#cajita13{
+    float: right;
+}
+#cajita14{
+    margin: 10px 10px 10px 10px;
+}
+
+#cajita15{
+    clear: left;
+    clear: both;
+    float: right;
+    direction: ltr;
+}
+
+#ej6{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: center;
+}
+#cajita16 {
+    align-self: flex-end;
+}
+#cajita17 {
+    align-self: center;
+}
+#cajita18 {
+    align-self: flex-start;
+}
