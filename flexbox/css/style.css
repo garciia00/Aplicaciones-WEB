@@ -1,0 +1,23 @@
+.layout {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.bloque {
+    background-color: #27F52E;
+    padding: 20px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    align-content: center;
+    margin: 5px;
+}
+
+.bloque:nth-child(3) {
+    order: -1;
+}
