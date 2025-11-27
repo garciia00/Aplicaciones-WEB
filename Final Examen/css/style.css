@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    /*Variables para colores*/
+    --color-principal: #009900;
+    --color-pastel: #A8E6CF;
+    --color-texto-oscuro: #747474;
+    --color-acento:#90EE90;
+    min-height: 100vh; /*Ocupar toda la pantalla */
+    
+}
+
+.bloque{
+    border: 1px solid var(--color-principal);
+    padding: 15px; /* Espaciado interno de margen de todos los bloques*/    
+}
+
+#layout{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto 1fr auto; /*Con el frame se adapta a la pantalla y con el auto solo el espacio que el necesite*/
+    grid-template-areas: /*Darle forma asignando los lugares con nombres*/
+        "header  header  header"
+        "aside   main    main"
+        "footer  footer  footer"
+    ;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh; 
+}
+
+header{grid-area: header;}
+aside{grid-area: aside;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+/*Sirve para nombrar a lo que hemos puesto anteriormente
+    el en grid-template-areas*/
+
+header, footer{
+    background-color: var(--color-principal);
+    color: white;
+    display: flex; /*Flexbox para centrar el texto*/
+    justify-content: space-between; /*Separar los elementos del header*/
+    align-items: flex-end; /*Centrar verticalmente*/
+
+}
+aside{
+    background-color: var(--color-pastel);
+}
+main{
+    background-color: white;
+}
+nav ol{
+    list-style: none; /*Sirve para quitar los numero del ol, li etc...*/
+    padding: 0; /*Quitar el padding por defecto*/
+    margin: 0;
+}
+nav ol li{
+    display: inline-block; /*Ordenar horizontalmente los elementos de la lista*/
+    position: relative; /*Clave para el posicionamiento absoluto de los hijos*/
+}
+nav a{ /*Es importante dar las caracteristicas a los enlaces porque si no se bugea*/
+    text-decoration: none;
+    background-color: var(--color-texto-oscuro);
+    color: white;
+    padding: 10px; /*Espaciado interno de los enlaces*/
+    border-radius: 7px; /*Poner bordes redondeados*/
+    display: block; /*Para que ocupe todo el espacio del li*/
+}
+
+nav ol li ol{
+    display: none; /*Eso hace desaparecer los subenlaces del "Enlace 2"*/
+    position: absolute;
+    min-width: 150px;
+    margin: 4px 0px ;
+}
+nav ol li ol li{
+    margin: 2px 0px ;
+    display: block; /*Para que los subenlaces se pongan en vertical*/
+}
+
+nav ol li:hover > ol{ /*El > sirve para que se abran solo los hijos directos del Enlace 2, en caso de no ponerlo se abren todo los subenlaces*/
+    display: block; /*Hace que los subenlaces del "Enlace 2" aparezcan al pasar el raton por encima*/
+}
+
+nav a:hover{
+    background-color: var(--color-pastel);
+    color: black;
+    transition: background-color 0.5s, color 0.5s; /*Transicion suave al cambiar de color*/
+}
+
+main{
+    div{
+    grid-area: main;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+    article{
+        background-color: var(--color-acento);
+        margin: 10px; /*Espaciado externo de margen de todos los bloques*/
+        padding: 15px; /* Espaciado interno de margen de todos los bloques*/
+        border-radius: 10px; /*Bordes redondeados*/
+        box-shadow: 2px 2px 5px var(--color-principal);
+    }
+}
+
+
+@media (max-width: 800px){ /*cuando el dispositivo no supere los 800px de pantalla el codigo se basará en estas especificaciones*/
+    #layout{
+        grid-template-columns: 1fr; /*Una sola columna que ocupe todo el espacio*/
+        grid-template-rows: auto; /*El auto hace que las filas ocupen solo el espacio que necesiten*/
+        grid-template-areas: /*Darle forma asignando los lugares con nombres*/
+            "header header header"
+            "nav    nav    nav"
+            "main   main   main"
+            "aside  aside   aside"
+            "footer footer footer"
+        ;
+    }
+
+    header{
+        flex-direction: column; /*Poner los elementos del header en columna*/
+        align-items: start;
+    }
+
+
+    main{
+        div{
+        grid-area: main;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    article{
+        background-color: var(--color-acento);
+        margin: 10px; 
+        padding: 15px; 
+        border-radius: 10px; 
+        box-shadow: 2px 2px 5px var(--color-principal);
+    }
+}
+}
